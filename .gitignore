@@ -1,0 +1,19 @@
+# Hệ điều hành
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Log & temp
+*.log
+*.tmp
+*.cache
+
+# Node (nếu sau này dùng)
+node_modules/
+npm-debug.log*
