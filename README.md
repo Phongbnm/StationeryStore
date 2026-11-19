@@ -6,12 +6,22 @@ Website bán đồ dùng học tập – HTML, CSS, JavaScript thuần.
 
 ```
 StationeryStore/
-├── index.html          ← Trang chủ
-├── pages/              ← Các trang con
-├── css/                ← Stylesheet
-├── js/                 ← JavaScript
+├── index.html
+├── pages/
+│   └── auth/
+│       └── login.html
+├── css/
+│   └── auth/
+│       └── login.css
+├── js/
+│   └── auth/
+│       ├── auth-tabs.js
+│       └── login.js
 └── assets/             ← Ảnh, font, icon
 ```
+
+Các màn hình được nhóm theo tính năng trong từng loại file (ví dụ `auth`), giúp
+dễ thêm các nhóm như `products` hoặc `cart` sau này.
 
 ## 🚀 Cách chạy
 

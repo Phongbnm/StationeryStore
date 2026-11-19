@@ -1,0 +1,405 @@
+:root {
+    --b: #2447f5;
+    --ink: #101746;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--ink);
+    font-family: "Be Vietnam Pro", Arial, sans-serif;
+}
+
+a,
+button,
+input {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.login-header {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    border-bottom: 1px solid #edf0f7;
+}
+
+.brand {
+    color: var(--b);
+    font-size: 29px;
+    font-weight: 800;
+}
+
+.brand span {
+    display: inline-grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    margin-right: 9px;
+    border-radius: 8px;
+    background: var(--b);
+    color: white;
+}
+
+.home-link {
+    color: #142aaf;
+    font-weight: 600;
+}
+
+.login-page {
+    position: relative;
+    flex: 1;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.login-decoration {
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    pointer-events: none;
+}
+
+.login-decoration--top {
+    top: 8%;
+    right: 8%;
+}
+
+.login-decoration--left {
+    top: 52%;
+    left: 3%;
+}
+
+.login-decoration--bottom {
+    right: 4%;
+    bottom: 8%;
+}
+
+.login-box {
+    position: relative;
+    z-index: 1;
+    width: min(920px, 100%);
+    min-height: 520px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 12px;
+}
+
+.welcome {
+    position: relative;
+    overflow: hidden;
+    padding: 42px 36px;
+    background: linear-gradient(135deg, #e9edff, #dfe7ff);
+    border-radius: 33px;
+}
+
+.welcome h1 {
+    margin: 0;
+    font-size: 29px;
+}
+
+.welcome h1 strong {
+    display: block;
+    color: var(--b);
+    font-size: 50px;
+}
+
+.welcome p {
+    font-size: 14px;
+    color: #3d4b82;
+    line-height: 1.55;
+}
+
+.welcome ul {
+    padding: 12px 0;
+    list-style: none;
+    font-size: 13px;
+    line-height: 2.9;
+}
+
+.books {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+    object-position: center bottom;
+}
+
+.login-card {
+    padding: 0 28px;
+    border: 1px solid #dfe3f0;
+    border-radius: 33px;
+    background: #fff;
+}
+
+.tabs {
+    display: flex;
+    height: 55px;
+    border-bottom: 1px solid #e2e5ef;
+}
+
+.tabs button {
+    width: 50%;
+    border: 0;
+    background: transparent;
+    color: #6e769c;
+    font: inherit;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.tabs .active {
+    color: var(--b);
+    border-bottom: 4px solid var(--b);
+}
+
+.register-panel[hidden] {
+    display: none;
+}
+
+form {
+    padding-top: 20px;
+}
+
+h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+form > p {
+    color: #5e6991;
+    font-size: 13px;
+}
+
+form > label {
+    display: block;
+    margin: 13px 0;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+form input:not([type="checkbox"]) {
+    display: block;
+    width: 100%;
+    height: 44px;
+    margin-top: 10px;
+    padding: 0 19px;
+    border: 1px solid #cfd5e8;
+    border-radius: 15px;
+    font: inherit;
+    font-size: 13px;
+}
+
+form input.input-icon {
+    padding-left: 48px;
+    background-repeat: no-repeat;
+    background-position: 16px center;
+    background-size: 20px 20px;
+}
+
+.input-icon--email {
+    background-image: url("../../assets/icons/email.svg");
+}
+
+.input-icon--password {
+    background-image: url("../../assets/icons/lock.svg");
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin: 14px 0 17px;
+    color: #5f6a94;
+}
+
+.options input {
+    width: 22px;
+    height: 22px;
+    accent-color: var(--b);
+}
+
+.options a,
+.signup a {
+    color: var(--b);
+    font-weight: 700;
+}
+
+.text-button {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--b);
+    font: inherit;
+    font-weight: 700;
+}
+
+.login-button {
+    width: 100%;
+    height: 50px;
+    border: 0;
+    border-radius: 14px;
+    background: var(--b);
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.register-form {
+    padding-top: 18px;
+}
+
+.register-form > p {
+    margin: 0 0 12px;
+}
+
+.register-form > label {
+    margin: 9px 0;
+}
+
+.register-form input:not([type="checkbox"]) {
+    height: 38px;
+    margin-top: 6px;
+    border-radius: 10px;
+}
+
+.register-form .terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 12px 0;
+    color: #5f6a94;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.terms input {
+    flex: 0 0 auto;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    accent-color: var(--b);
+}
+
+.register-panel .signup {
+    margin: 12px 0;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 18px 0 14px;
+    color: #66709c;
+}
+
+.divider:before,
+.divider:after {
+    content: "";
+    flex: 1;
+    border-top: 1px solid #dfe3ee;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social button {
+    width: 56px;
+    height: 56px;
+    border: 1px solid #d5daeb;
+    border-radius: 12px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-icon {
+    max-width: 70%;
+    max-height: 70%;
+    display: block;
+}
+
+.social-icon--google {
+    width: 33px;
+}
+
+.social-icon--apple {
+    width: 31px;
+}
+
+.signup {
+    margin: 16px 0 0;
+    text-align: center;
+    color: #66709c;
+    margin: 12px 0;
+}
+
+footer {
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    background: var(--b);
+    color: #fff;
+    font-size: 15px;
+}
+
+@media (max-width: 800px) {
+    .login-box {
+        grid-template-columns: 1fr;
+        min-height: 0;
+    }
+
+    .welcome {
+        min-height: 300px;
+        padding: 45px 35px;
+    }
+
+    .login-card {
+        padding: 0 25px;
+    }
+
+    .login-header {
+        height: 64px;
+    }
+
+    .brand {
+        font-size: 23px;
+    }
+
+    .welcome h1 strong {
+        font-size: 52px;
+    }
+
+    footer {
+        height: auto;
+        padding: 22px;
+        gap: 10px;
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+}

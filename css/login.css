@@ -1,0 +1,327 @@
+:root {
+    --b: #2948f2;
+    --ink: #111a45;
+}
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #fcfbf8;
+    color: var(--ink);
+    font:
+        13px "Be Vietnam Pro",
+        Arial,
+        sans-serif;
+}
+a,
+button,
+input {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.topbar {
+    height: 38px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--b);
+    color: #fff;
+    font-size: 10px;
+}
+header {
+    background: #fffdfa;
+    border-bottom: 1px solid #e1e5ed;
+}
+.head {
+    height: 76px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.brand {
+    color: var(--b);
+    font-size: 25px;
+    font-weight: 800;
+}
+.brand i {
+    display: inline-grid;
+    place-items: center;
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    border-radius: 6px;
+    background: var(--b);
+    color: white;
+    font-style: normal;
+}
+.search {
+    width: 440px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 0 13px;
+    border: 1px solid #dce1ea;
+    border-radius: 18px;
+    color: #8790a8;
+}
+.search input {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    background: transparent;
+    font: inherit;
+}
+.actions {
+    margin-left: auto;
+    display: flex;
+    gap: 22px;
+    font-size: 11px;
+}
+.actions b {
+    background: #ef4d55;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 8px;
+    padding: 2px 5px;
+}
+nav {
+    height: 34px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    font-size: 10px;
+}
+nav a:last-child {
+    margin-left: auto;
+    color: var(--b);
+    font-weight: 700;
+}
+main {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    padding: 38px 20px;
+    min-height: 520px;
+}
+.login {
+    width: min(690px, 100%);
+    min-height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1.03fr;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.login aside {
+    position: relative;
+    padding: 40px 33px;
+    background: #e3eaff;
+    overflow: hidden;
+}
+.login h1 {
+    font-size: 25px;
+    margin: 0;
+}
+.login h1 strong {
+    display: block;
+    font-size: 42px;
+    color: var(--b);
+}
+.login aside p {
+    color: #647092;
+    font-size: 12px;
+}
+.login ul {
+    padding: 0;
+    list-style: none;
+    line-height: 3.5;
+    font-size: 10px;
+}
+.books {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 70px;
+    height: 155px;
+    background: linear-gradient(160deg, transparent 34%, #b7d0ff 35%);
+    color: #1264ae;
+    font-size: 34px;
+    line-height: 0.55;
+    letter-spacing: 8px;
+}
+.card {
+    border: 1px solid #dfe5f0;
+    border-radius: 16px;
+    background: #fff;
+    padding: 0 26px;
+}
+.tabs {
+    display: flex;
+    height: 48px;
+    border-bottom: 1px solid #dfe5f0;
+}
+.tabs button {
+    width: 50%;
+    border: 0;
+    background: transparent;
+    color: #717b99;
+    font: 14px inherit;
+}
+.tabs button:first-child {
+    color: var(--b);
+    font-weight: 700;
+    border-bottom: 3px solid var(--b);
+}
+form {
+    padding-top: 20px;
+}
+h2 {
+    margin: 0 0 7px;
+    font-size: 19px;
+}
+form > p {
+    font-size: 10px;
+    color: #75809d;
+}
+form > label {
+    display: block;
+    margin: 12px 0;
+    font-size: 10px;
+    font-weight: 700;
+}
+form input:not([type="checkbox"]) {
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin-top: 6px;
+    border: 1px solid #dbe1ec;
+    border-radius: 8px;
+    padding: 0 12px;
+    font: 9px inherit;
+}
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    color: #818ba5;
+}
+.options a,
+.signup a {
+    color: var(--b);
+    font-weight: 700;
+}
+.submit {
+    width: 100%;
+    height: 36px;
+    margin-top: 14px;
+    border: 0;
+    border-radius: 6px;
+    background: var(--b);
+    color: #fff;
+    font-weight: 700;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 17px 0 12px;
+    color: #929ab1;
+    font-size: 8px;
+}
+.divider:before,
+.divider:after {
+    content: "";
+    flex: 1;
+    border-top: 1px solid #e3e6ed;
+}
+.social {
+    text-align: center;
+}
+.social button {
+    width: 49px;
+    height: 34px;
+    margin: 0 4px;
+    border: 1px solid #dce1ec;
+    border-radius: 7px;
+    background: #fff;
+    color: var(--b);
+    font-weight: 800;
+}
+.signup {
+    text-align: center;
+    font-size: 9px;
+    color: #8992a9;
+}
+footer {
+    background: var(--b);
+    color: #fff;
+    padding: 20px 6% 14px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    gap: 36px;
+}
+.white {
+    color: #fff;
+    font-size: 19px;
+}
+.footer b,
+.footer a,
+.footer span,
+.footer p {
+    display: block;
+    margin: 7px 0;
+    font-size: 9px;
+}
+.copy {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    padding-top: 12px;
+    border-top: 1px solid #ffffff35;
+    font-size: 8px;
+}
+@media (max-width: 700px) {
+    .topbar span:nth-child(2),
+    .search,
+    nav {
+        display: none;
+    }
+    .head {
+        height: 65px;
+        padding: 0 20px;
+        gap: 10px;
+    }
+    .actions {
+        gap: 8px;
+    }
+    .login {
+        grid-template-columns: 1fr;
+    }
+    .login aside {
+        min-height: 300px;
+    }
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+    .copy {
+        display: block;
+        line-height: 2;
+    }
+}
